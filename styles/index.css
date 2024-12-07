@@ -55,10 +55,13 @@ h1 {
     margin: 20px 0;
 }
 
-.header p {
-    font-size: 16px;
-    line-height: 1.4;
+.gray_text {
     color: hsl(30, 10%, 34%);
+    font-size: 15px;
+}
+
+.header p {
+    line-height: 1.4;
     text-align: left;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -70,6 +73,9 @@ h1 {
     font-weight: 600;
 }
 
+.nutrition p {
+    font-size: 13px;
+}
 
 /*******************
     Picture
@@ -98,15 +104,14 @@ h1 {
 
 .container {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .preparation {
     background-color: hsl(330, 100%, 98%);
     width: 100%;
-    
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
 }
 
 /***********************
@@ -124,11 +129,14 @@ h1 {
     text-wrap: wrap;
 }
 
+ol,
 ul {
-    display: flex;
+    display: flex;  
     flex-direction: column;
     gap: 15px;
     list-style-position: inside;
+    line-height: 1.5;
+    font-size: 14px;
 }
 
 /***** Split line ****/
@@ -139,3 +147,20 @@ ul {
     background-color: hsl(30, 18%, 87%);
     margin: 20px 0;
 }
+
+.tables_nutrition {
+    padding: 20px 0;
+}
+
+.table_nutrition {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+}
+
+.value {
+    color: hsl(14, 45%, 36%);
+}
+
